@@ -112,6 +112,7 @@ button {
   font-family: "Montserrat";
   font-size: 1.2rem;
   margin-top: 2rem;
+  color: black;
 }
 button:hover {
   background-color: black;
