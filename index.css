@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat";
   font-size: 1rem;
@@ -113,7 +117,7 @@ button {
   font-size: 1.2rem;
   margin-top: 2rem;
   color: black;
-  border: 1px solid black;
+  border: 1.5px solid black;
 }
 button:hover {
   background-color: black;
@@ -194,6 +198,17 @@ section.services {
   font-weight: 700;
   letter-spacing: 0rem;
 }
+
+.about button {
+  background: none;
+  color: #cf9f8c;
+  border-color: #cf9f8c;
+}
+
+.about button:hover {
+  background: #cf9f8c;
+  color: white;
+}
 @media only screen and (min-width: 1024px) {
   .service-flex {
     flex-direction: row;
@@ -261,5 +276,43 @@ section.skills {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 4rem;
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #cf9f8c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+}
+.social-media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer ul li a {
+  color: white;
+}
+.social-media-container img {
+  height: 30px;
+}
+
+@media only screen and (min-width: 1024px) {
+  footer ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
   }
 }
